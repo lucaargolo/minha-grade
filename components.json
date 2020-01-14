@@ -1,0 +1,830 @@
+{
+	"periods": {
+		"Semestre 1":["MATA01", "MATA02", "MATA37", "MATA38", "MATA39", "MATA42"],
+		"Semestre 2":["MATA07", "MATA40", "MATA48", "MATA57", "MATA95", "MATA97"],
+		"Semestre 3":["FISA75", "MAT236", "MATA47", "MATA49", "MATA50", "MATA55"],
+		"Semestre 4":["FCHC45", "MATA51", "MATA52", "MATA58", "MATA61", "MATA68"],
+		"Semestre 5":["MATA53", "MATA54", "MATA59", "MATA62", "MATE12"],
+		"Semestre 6":["MATA60", "MATA64", "MATA65", "MATA88", "MATE11"],
+		"Semestre 7":["MATA66"],
+		"Semestre 8":["MATA67"]
+	},
+	"components": {
+		"MATA01": {
+			"name": "GEOMETRIA ANALÍTICA",
+			"requirements": []
+		},
+		"MATA02": {
+			"name": "CÁLCULO A",
+			"requirements": []
+		},
+		"MATA37": {
+			"name": "INTRODUÇÃO À LÓGICA DE PROGRAMAÇÃO",
+			"requirements": []
+		},
+		"MATA38": {
+			"name": "PROJETO DE CIRCUITOS LÓGICOS",
+			"requirements": []
+		},
+		"MATA39": {
+			"name": "SEMINÁRIOS DE INTRODUÇÃO AO CURSO",
+			"requirements": []
+		},
+		"MATA42": {
+			"name": "MATEMÁTICA DISCRETA I",
+			"requirements": []
+		},
+		"MATA07": {
+			"name": "ÁLGEBRA LINEAR A",
+			"requirements": ["MATA01"]
+		},
+		"MATA40": {
+			"name": "ESTRUTURAS DE DADOS E ALGORITMOS I",
+			"requirements": ["MATA37","MATA42"]
+		},
+		"MATA48": {
+			"name": "ARQUITETURA DE COMPUTADORES",
+			"requirements": ["MATA38"]
+		},
+		"MATA57": {
+			"name": "LABORATÓRIO DE PROGRAMAÇÃO I",
+			"requirements": ["MATA37"]
+		},
+		"MATA95": {
+			"name": "COMPLEMENTOS DE CÁLCULO",
+			"requirements": ["MATA01","MATA02"]
+		},
+		"MATA97": {
+			"name": "MATEMÁTICA DISCRETA II",
+			"requirements": ["MATA42"]
+		},
+		"FISA75": {
+			"name": "ELEMENTOS DO ELETROMAGNETISMO E DE CIRCUITOS ELÉTRICOS",
+			"requirements": ["MATA95"]
+		},
+		"MAT236": {
+			"name": "MÉTODOS ESTATÍSTICOS",
+			"requirements": ["MATA42","MATA95"]
+		},
+		"MATA47": {
+			"name": "LÓGICA PARA COMPUTAÇÃO",
+			"requirements": ["MATA97"]
+		},
+		"MATA49": {
+			"name": "PROGRAMAÇÃO DE SOFTWARE BÁSICO",
+			"requirements": ["MATA40","MATA48","MATA57"]
+		},
+		"MATA50": {
+			"name": "LINGUAGENS FORMAIS E AUTÔMATOS",
+			"requirements": ["MATA42"]
+		},
+		"MATA55": {
+			"name": "PROGRAMAÇÃO ORIENTADA A OBJETOS",
+			"requirements": ["MATA40"]
+		},
+		"FCHC45": {
+			"name": "METODOLOGIA E EXPRESSÃO TÉCNICO-CIENTÍFICA",
+			"requirements": []
+		},
+		"MATA51": {
+			"name": "TEORIA DA COMPUTAÇÃO",
+			"requirements": ["MATA47","MATA50"]
+		},
+		"MATA52": {
+			"name": "ANÁLISE E PROJETO DE ALGORITMOS",
+			"requirements": ["MATA40"]
+		},
+		"MATA58": {
+			"name": "SISTEMAS OPERACIONAIS",
+			"requirements": ["MATA49"]
+		},
+		"MATA61": {
+			"name": "COMPILADORES",
+			"requirements": ["MATA49","MATA50"]
+		},
+		"MATA68": {
+			"name": "COMPUTADOR, ÉTICA E SOCIEDADE",
+			"requirements": []
+		},
+		"MATA53": {
+			"name": "TEORIA DOS GRAFOS",
+			"requirements": ["MATA52"]
+		},
+		"MATA54": {
+			"name": "ESTRUTURAS DE DADOS E ALGORITMOS II",
+			"requirements": ["MATA52"]
+		},
+		"MATA59": {
+			"name": "REDES DE COMPUTADORES I",
+			"requirements": ["MATA49"]
+		},
+		"MATA62": {
+			"name": "ENGENHARIA DE SOFTWARE I",
+			"requirements": ["MATA55"]
+		},
+		"MATE12": {
+			"name": "PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO A",
+			"requirements": ["MATA55"]
+		},
+		"MATA60": {
+			"name": "BANCO DE DADOS",
+			"requirements": ["MATA54"]
+		},
+		"MATA64": {
+			"name": "INTELIGÊNCIA ARTIFICIAL",
+			"requirements": ["MATA47","MATA53","MATE12"]
+		},
+		"MATA65": {
+			"name": "COMPUTAÇÃO GRÁFICA",
+			"requirements": ["MATA07","MATA57","MATA95"]
+		},
+		"MATA88": {
+			"name": "FUNDAMENTOS DE SISTEMAS DISTRIBUÍDOS",
+			"requirements": ["MATA58","MATA59"]
+		},
+		"MATE11": {
+			"name": "ENGENHARIA DE SOFTWARE II-A",
+			"requirements": ["MATA62"]
+		},
+		"MATA66": {
+			"name": "PROJETO FINAL DE CURSO I",
+			"requirements": ["FCHC45"]
+		},
+		"MATA67": {
+			"name": "PROJETO FINAL DE CURSO II",
+			"requirements": ["MATA66"]
+		},
+		"ADM001": {
+			"name":"INTRODUCAO À ADMINISTRACAO",
+			"requirements": []
+		},
+		"ADM011": {
+			"name":"PESQUISA OPERACIONAL",
+			"requirements": []
+		},
+		"ADM170": {
+			"name":"ADMINISTRACAO CONTABIL I",
+			"requirements": []
+		},
+		"ADM171": {
+			"name":"ELEMENTOS E ANALISES DE CUSTOS",
+			"requirements": ["ADM001"]
+		},
+		"ADM241": {
+			"name":"INTRODUCAO AO MARKETING",
+			"requirements": []
+		},
+		"ADM243": {
+			"name":"GERÊNCIA CONTEMPORÂNEA",
+			"requirements": []
+		},
+		"ECO001": {
+			"name":"FUNDAMENTOS DE ECONOMIA",
+			"requirements": []
+		},
+		"EDC001": {
+			"name":"EDUCAÇÃO ABERTA, CONTINUADA E À DISTÂNCIA",
+			"requirements": []
+		},
+		"ENG229": {
+			"name":"APLICAÇÕES INDUSTRIAIS DA COMPUTAÇÃO",
+			"requirements": []
+		},
+		"ENG336": {
+			"name":"ELETRÔNICA DIGITAL",
+			"requirements": ["MATA38"]
+		},
+		"ENG635": {
+			"name":"SISTEMAS CAD/CAM",
+			"requirements": []
+		},
+		"ENG636": {
+			"name":"SISTEMAS CAE E METODOS DE ELEMENTOS FINITOS",
+			"requirements": []
+		},
+		"ENG637": {
+			"name":"ANALISE DINAMICA DE ESTRUTURAS",
+			"requirements": []
+		},
+		"ENG638": {
+			"name":"PROJETO MECATRONICO DE MAQUINAS",
+			"requirements": []
+		},
+		"ENG639": {
+			"name":"ENGENHARIA CONCORRENTE E PROTOTIPAGEM RAPIDA",
+			"requirements": []
+		},
+		"ENG640": {
+			"name":"GESTAO E CONTROLE DA QUALIDADE",
+			"requirements": []
+		},
+		"ENG641": {
+			"name":"MATERIAIS EM SISTEMAS MECATRONICOS",
+			"requirements": []
+		},
+		"ENG642": {
+			"name":"SISTEMAS INTEGRADOS DE MANUFATURA",
+			"requirements": []
+		},
+		"ENG643": {
+			"name":"PLANEJAMENTO E CONTROLE DA PRODUCAO",
+			"requirements": []
+		},
+		"ENG644": {
+			"name":"MODELAGEM E SIMULACAO DE PROCESSOS",
+			"requirements": []
+		},
+		"ENG645": {
+			"name":"SISTEMAS ROBOTICOS",
+			"requirements": []
+		},
+		"ENG646": {
+			"name":"AUTOMACAO DE SISTEMAS",
+			"requirements": ["MATA48"]
+		},
+		"ENG647": {
+			"name":"SENSORES E INSTRUMENTACAO",
+			"requirements": []
+		},
+		"ENG648": {
+			"name":"CONTROLE E AUTOMACAO DE PROCESSOS",
+			"requirements": ["MATA07","MATA95"]
+		},
+		"ENG649": {
+			"name":"CONTROLE ENERGETICO DE SISTEMAS MECATRONICOS",
+			"requirements": []
+		},
+		"ENG650": {
+			"name":"INTRODUCAO A INTELIGENCIA ARTIFICIAL",
+			"requirements": []
+		},
+		"ENG651": {
+			"name":"REDES NEURAIS E SISTEMAS NEBULOSOS",
+			"requirements": []
+		},
+		"ENG652": {
+			"name":"PESQUISA OPERACIONAL",
+			"requirements": []
+		},
+		"ENG653": {
+			"name":"AQUISICAO DE DADOS EM TEMPO REAL",
+			"requirements": []
+		},
+		"ENG654": {
+			"name":"OTIMIZACAO DE PROCESSOS",
+			"requirements": []
+		},
+		"ENG655": {
+			"name":"SISTEMAS NAO-LINEARES",
+			"requirements": []
+		},
+		"ENG764": {
+			"name":"TOPICOS ESPECIAIS EM MECATRONICA I",
+			"requirements": []
+		},
+		"ENG765": {
+			"name":"TOPICOS ESPECIAIS EM MECATRONICA III",
+			"requirements": []
+		},
+		"ENG791": {
+			"name":"TIROCINIO DOCENTE ORIENTADO",
+			"requirements": []
+		},
+		"ENG795": {
+			"name":"PARTICIPACAO EM PROJETO DE PESQUISA",
+			"requirements": []
+		},
+		"ENGC40": {
+			"name":"ELETRÔNICA DIGITAL",
+			"requirements": ["MATA38"]
+		},
+		"ENGG52": {
+			"name":"LABORATÓRIO INTEGRADO I-A",
+			"requirements": ["MATA37","MATA38"]
+		},
+		"ENGG53": {
+			"name":"LABORATÓRIO INTEGRADO II-A",
+			"requirements": ["ENGG52"]
+		},
+		"ENGL24": {
+			"name":"VISÃO COMPUTACIONAL E RECONHECIMENTO DE PADRÕES",
+			"requirements": []
+		},
+		"ENGL25": {
+			"name":"PROJETOS DE SISTEMAS TÉCNICOS DE PRECISÃO",
+			"requirements": []
+		},
+		"ENGL26": {
+			"name":"FUNDAMENTOS DE PROCESSAMENTOS DIGITAL DE SINAIS",
+			"requirements": []
+		},
+		"FCC001": {
+			"name":"CONTABILIDADE GERAL I",
+			"requirements": []
+		},
+		"FISA76": {
+			"name":"OSCILAÇÕES E ONDAS ELETROMAGNÉTICAS",
+			"requirements": ["FISA75"]
+		},
+		"IPSA39": {
+			"name":"PSICOLOGIA DAS RELACOES HUMANAS",
+			"requirements": []
+		},
+		"LET358": {
+			"name":"INGLES INSTRUMENTAL III N-100",
+			"requirements": []
+		},
+		"LET359": {
+			"name":"INGLES INSTRUMENTAL IV N-100",
+			"requirements": ["LET358"]
+		},
+		"LETE46": {
+			"name":"Libras-Língua Brasileira de Sinais",
+			"requirements": []
+		},
+		"MAT174": {
+			"name":"CALCULO NUMÉRICO I",
+			"requirements": ["MATA07","MATA37","MATA95"]
+		},
+		"MAT220": {
+			"name":"EMPREENDEDORES EM INFORMATICA",
+			"requirements": []
+		},
+		"MAT566": {
+			"name":"SISTEMAS OPERACIONAIS",
+			"requirements": []
+		},
+		"MAT567": {
+			"name":"INTRODUCAO AOS METODOS FORMAIS",
+			"requirements": []
+		},
+		"MAT568": {
+			"name":"REDES DE COMPUTADORES",
+			"requirements": []
+		},
+		"MAT569": {
+			"name":"FUNDAMENTOS DE TOLERANCIA A FALHAS",
+			"requirements": []
+		},
+		"MAT570": {
+			"name":"FUNDAMENTOS DE SISTEMAS DISTRIBUÍDOS",
+			"requirements": []
+		},
+		"MAT571": {
+			"name":"SISTEMAS DE TEMPO REAL",
+			"requirements": []
+		},
+		"MAT572": {
+			"name":"INTRODUCAO A INTELIGENCIA ARTIFICIAL",
+			"requirements": []
+		},
+		"MAT700": {
+			"name":"TOPICOS ESPECIAIS EM MECATRONICA II",
+			"requirements": []
+		},
+		"MAT701": {
+			"name":"TOPICOS ESPECIAIS EM MECATRONICA IV",
+			"requirements": []
+		},
+		"MATA04": {
+			"name":"CÁLCULO C",
+			"requirements": []
+		},
+		"MATA05": {
+			"name":"CÁLCULO D",
+			"requirements": ["MATA95"]
+		},
+		"MATA15": {
+			"name":"ARQUITETURA DE COMPUTADORES",
+			"requirements": []
+		},
+		"MATA16": {
+			"name":"LOGICA E METODOS FORMAIS",
+			"requirements": []
+		},
+		"MATA41": {
+			"name":"INFORMÁTICA NA EDUCAÇÃO",
+			"requirements": []
+		},
+		"MATA69": {
+			"name":"MODELAGEM E SIMULAÇÃO DE SISTEMAS",
+			"requirements": ["MAT236","MATA07"]
+		},
+		"MATA71": {
+			"name":"ANÁLISE NUMÉRICA",
+			"requirements": ["MAT174","MATA07","MATA95"]
+		},
+		"MATA72": {
+			"name":"TÓPICOS EM ARQUITETURA DE COMPUTADORES",
+			"requirements": ["MATA48"]
+		},
+		"MATA73": {
+			"name":"LABORATÓRIO DE CIRCUITOS DIGITAIS",
+			"requirements": ["MATA38"]
+		},
+		"MATA74": {
+			"name":"TÓPICOS EM COMPUTAÇÃO E ALGORITMOS",
+			"requirements": ["MATA50","MATA51","MATA52"]
+		},
+		"MATA75": {
+			"name":"SEMÂNTICA DE LINGUAGEM DE PROGRAMAÇÃO",
+			"requirements": ["MATA47","MATE12"]
+		},
+		"MATA76": {
+			"name":"LINGUAGENS PARA APLICAÇÃO COMERCIAL",
+			"requirements": ["MATA40"]
+		},
+		"MATA77": {
+			"name":"PROGRAMAÇÃO FUNCIONAL",
+			"requirements": ["MATA40","MATA97"]
+		},
+		"MATA79": {
+			"name":"TÓPICOS EM PROGRAMAÇÃO",
+			"requirements": ["MATA54","MATE12"]
+		},
+		"MATA80": {
+			"name":"LABORATÓRIO DE PROGRAMAÇÃO II",
+			"requirements": ["MATA52"]
+		},
+		"MATA81": {
+			"name":"LABORATÓRIO DE SISTEMAS OPERACIONAIS",
+			"requirements": ["MATA58"]
+		},
+		"MATA82": {
+			"name":"SISTEMAS DE TEMPO REAL",
+			"requirements": ["MATA58"]
+		},
+		"MATA83": {
+			"name":"TÓPICOS EM SISTEMAS OPERACIONAIS",
+			"requirements": ["MATA58"]
+		},
+		"MATA85": {
+			"name":"REDES DE COMPUTADORES II",
+			"requirements": ["MATA59"]
+		},
+		"MATA86": {
+			"name":"TÓPICOS EM REDES DE COMPUTADORES",
+			"requirements": ["MATA59"]
+		},
+		"MATA87": {
+			"name":"SEGURANÇA DA INFORMAÇÃO",
+			"requirements": ["MATA07"]
+		},
+		"MATA89": {
+			"name":"ARQUITETURAS DE SISTEMAS DISTRIBUÍDOS",
+			"requirements": ["MATA58","MATA59"]
+		},
+		"MATA90": {
+			"name":"ALGORITMOS DISTRIBUIDOS",
+			"requirements": ["MATA88"]
+		},
+		"MATB01": {
+			"name":"LABORATÓRIO DE REDES DE COMPUTADORES",
+			"requirements": ["MATA59"]
+		},
+		"MATB02": {
+			"name":"QUALIDADE DE SOFTWARE",
+			"requirements": ["MATE11"]
+		},
+		"MATB03": {
+			"name":"EVOLUÇÃO DE SOFTWARE",
+			"requirements": ["MATE11"]
+		},
+		"MATB04": {
+			"name":"TÓPICOS EM COMPUTAÇÃO GRÁFICA E PROCESSAMENTO DE IMAGENS",
+			"requirements": ["MATA65"]
+		},
+		"MATB05": {
+			"name":"TÓPICOS EM INTELIGÊNCIA ARTIFICIAL",
+			"requirements": ["MATA64"]
+		},
+		"MATB06": {
+			"name":"TÓPICOS EM SISTEMAS DISTRIBUIDOS",
+			"requirements": ["MATA88"]
+		},
+		"MATB09": {
+			"name":"LABORATÓRIO DE BANCO DE DADOS",
+			"requirements": ["MATA60"]
+		},
+		"MATB10": {
+			"name":"TÓPICOS EM BANCO DE DADOS",
+			"requirements": ["MATA60"]
+		},
+		"MATB11": {
+			"name":"LABORATÓRIO DE COMPILADORES",
+			"requirements": ["MATA61"]
+		},
+		"MATB12": {
+			"name":"TÓPICOS EM COMPILADORES",
+			"requirements": ["MATA61"]
+		},
+		"MATB13": {
+			"name":"MÉTODOS FORMAIS",
+			"requirements": ["MATA47,MATA62"]
+		},
+		"MATB14": {
+			"name":"LABORATÓRIO DE ENGENHARIA DE SOFTWARE",
+			"requirements": ["MATE11"]
+		},
+		"MATB15": {
+			"name":"VALIDAÇÃO DE SOFTWARE",
+			"requirements": ["MATE11"]
+		},
+		"MATB16": {
+			"name":"LABORATÓRIO DE INTELIGÊNCIA ARTIFICIAL",
+			"requirements": ["MATA64"]
+		},
+		"MATB17": {
+			"name":"LAB. DE COMPUTAÇÃO GRÁFICA E PROCESSAMENTO DE IMAGENS",
+			"requirements": ["MATA65"]
+		},
+		"MATB19": {
+			"name":"SISTEMAS MULTIMÍDIA",
+			"requirements": ["MATA55"]
+		},
+		"MATB20": {
+			"name":"INTELIGÊNCIA ARTIFICIAL EM EDUCAÇÃO",
+			"requirements": ["MATA41","MATA64"]
+		},
+		"MATB21": {
+			"name":"AMBIENTES INTERATIVOS DE APRENDIZAGEM",
+			"requirements": ["MATA37","MATA41"]
+		},
+		"MATB22": {
+			"name":"LABORATÓRIO DE INFORMÁTICA NA EDUCAÇÃO",
+			"requirements": ["MATB21"]
+		},
+		"MATB23": {
+			"name":"SEMINÁRIOS EM EMPREENDEDORISMO",
+			"requirements": ["MATB65"]
+		},
+		"MATB24": {
+			"name":"ROBÓTICA INTELIGENTE",
+			"requirements": ["MATA48","MATA57","MATA64"]
+		},
+		"MATB25": {
+			"name":"TÓPICOS EM ENGENHARIA DE SOFTWARE",
+			"requirements": ["MATE11"]
+		},
+		"MATB26": {
+			"name":"TÓPICOS EM SISTEMAS MULTIMÍDIA",
+			"requirements": ["MATB19"]
+		},
+		"MATB27": {
+			"name":"TEORIA DAS CATEGORIAS",
+			"requirements": ["MATA97"]
+		},
+		"MATB28": {
+			"name":"ÁLGEBRA LINEAR B",
+			"requirements": ["MATA07"]
+		},
+		"MATB29": {
+			"name":"LÓGICA MATEMÁTICA",
+			"requirements": ["MATA47"]
+		},
+		"MATB65": {
+			"name":"EMPREENDIMENTOS E INFORMÁTICA",
+			"requirements": []
+		},
+		"MATC72": {
+			"name":"INTERAÇÃO HUMANO-COMPUTADOR",
+			"requirements": ["MATA62"]
+		},
+		"MATC82": {
+			"name":"SISTEMAS WEB",
+			"requirements": ["MATA55"]
+		},
+		"MATC84": {
+			"name":"LABORATÓRIO DE PROGRAMAÇÃO WEB",
+			"requirements": ["MATA55"]
+		},
+		"MATC88": {
+			"name":"ADMINISTRAÇÃO DE REDES DE COMPUTADORES",
+			"requirements": ["MATA59"]
+		},
+		"MATC89": {
+			"name":"APLICAÇÕES PARA DISPOSITIVOS MÓVEIS",
+			"requirements": ["MATA55","MATA59"]
+		},
+		"MATC93": {
+			"name":"INTRODUÇÃO A WEB SEMÂNTICA",
+			"requirements": ["MATA60"]
+		},
+		"MATC96": {
+			"name":"ORGANIZAÇÃO, GERENCIAMENTO E RECUPERAÇÃO DA INFORMAÇÃO",
+			"requirements": ["MATA60","MATC82"]
+		},
+		"MATC99": {
+			"name":"SEGURANÇA E AUDITORIA DE SISTEMAS DE INFORMAÇÃO",
+			"requirements": ["MATA07","MATA58"]
+		},
+		"MATD74": {
+			"name":"ALGORITMOS E GRAFOS",
+			"requirements": []
+		},
+		"MATD77": {
+			"name":"TOLERÂNCIA A FALHAS",
+			"requirements": []
+		},
+		"MATE04": {
+			"name":"TÓPICOS EM BANCO DE DADOS I",
+			"requirements": []
+		},
+		"MATE05": {
+			"name":"TÓPICOS EM REDES DE COMPUTADORES I",
+			"requirements": []
+		},
+		"MATE06": {
+			"name":"TÓPICOS EM COMPUTAÇÃO VISUAL I",
+			"requirements": []
+		},
+		"MATE08": {
+			"name":"TÓPICOS EM ENGENHARIA DE SOFTWARE I",
+			"requirements": []
+		},
+		"MATE10": {
+			"name":"TÓPICOS EM INTELIGÊNCIA COMPUTACIONAL I",
+			"requirements": []
+		},
+		"MATE13": {
+			"name":"PROGRAMAÇÃO CONCORRENTE, DISTRIBUÍDA E PARALELA",
+			"requirements": ["MATA88"]
+		},
+		"MATE14": {
+			"name":"TÓPICOS EM BANCO DE DADOS II",
+			"requirements": []
+		},
+		"MATE15": {
+			"name":"Tópicos em Banco de Dados III",
+			"requirements": []
+		},
+		"MATE16": {
+			"name":"Tópicos em Banco de Dados IV",
+			"requirements": []
+		},
+		"MATE17": {
+			"name":"Tópicos em Redes de Computadores II",
+			"requirements": []
+		},
+		"MATE18": {
+			"name":"Tópicos em Redes de Computadores III",
+			"requirements": []
+		},
+		"MATE19": {
+			"name":"Tópicos em Redes de Computadores IV",
+			"requirements": []
+		},
+		"MATE20": {
+			"name":"Tópicos em Computação Visual II",
+			"requirements": []
+		},
+		"MATE21": {
+			"name":"Tópicos em Computação Visual III",
+			"requirements": []
+		},
+		"MATE22": {
+			"name":"Tópicos em Computação Visual IV",
+			"requirements": []
+		},
+		"MATE26": {
+			"name":"Tópicos em Engenharia de Software II",
+			"requirements": []
+		},
+		"MATE27": {
+			"name":"Tópicos em Engenharia de Software III",
+			"requirements": []
+		},
+		"MATE28": {
+			"name":"Tópicos em Engenharia de Software IV",
+			"requirements": []
+		},
+		"MATE32": {
+			"name":"Tópicos em Inteligência Computacional II",
+			"requirements": []
+		},
+		"MATE33": {
+			"name":"Tópicos em Inteligência Computacional III",
+			"requirements": []
+		},
+		"MATE34": {
+			"name":"Tópicos em Inteligência Computacional IV",
+			"requirements": []
+		},
+		"MATE35": {
+			"name":"Tópicos em Sistemas Distribuidos I",
+			"requirements": []
+		},
+		"MATE36": {
+			"name":"Tópicos em Sistemas Distribuidos II",
+			"requirements": []
+		},
+		"MATE37": {
+			"name":"Tópicos em Sistemas Distribuidos III",
+			"requirements": []
+		},
+		"MATE38": {
+			"name":"Tópicos em Sistemas Distribuidos IV",
+			"requirements": []
+		},
+		"MATE67": {
+			"name":"ARQUITETURA DE SOFTWARE",
+			"requirements": []
+		},
+		"MATE68": {
+			"name":"BANCO DE DADOS",
+			"requirements": []
+		},
+		"MATE69": {
+			"name":"COMPUTAÇÃO DISTRIBUÍDA",
+			"requirements": []
+		},
+		"MATE70": {
+			"name":"COMPUTAÇÃO UBÍQUA E SENSÍVEL AO CONTEXTO",
+			"requirements": []
+		},
+		"MATE71": {
+			"name":"COMPUTAÇÃO VISUAL",
+			"requirements": []
+		},
+		"MATE73": {
+			"name":"INTELIGÊNCIA ARTIFICIAL",
+			"requirements": []
+		},
+		"MATE74": {
+			"name":"REUSO DE SOFTWARE",
+			"requirements": []
+		},
+		"MATE75": {
+			"name":"SISTEMAS WEB",
+			"requirements": []
+		},
+		"MATE76": {
+			"name":"TEORIA DA COMPUTAÇÃO",
+			"requirements": []
+		},
+		"MATE77": {
+			"name":"TÓPICOS EM ARQUITETURA DE COMPUTADORES I",
+			"requirements": []
+		},
+		"MATE78": {
+			"name":"TÓPICOS EM ARQUITETURA DE COMPUTADORES II",
+			"requirements": []
+		},
+		"MATE79": {
+			"name":"TÓPICOS EM ARQUITETURA DE COMPUTADORES III",
+			"requirements": []
+		},
+		"MATE80": {
+			"name":"TÓPICOS EM ARQUITETURA DE COMPUTADORES IV",
+			"requirements": []
+		},
+		"MATE81": {
+			"name":"TÓPICOS EM FUNDAMENTOS DA COMPUTAÇÃO I",
+			"requirements": []
+		},
+		"MATE82": {
+			"name":"TÓPICOS EM FUNDAMENTOS DA COMPUTAÇÃO II",
+			"requirements": []
+		},
+		"MATE83": {
+			"name":"TÓPICOS EM FUNDAMENTOS DA COMPUTAÇÃO III",
+			"requirements": []
+		},
+		"MATE84": {
+			"name":"TÓPICOS EM FUNDAMENTOS DA COMPUTAÇÃO IV",
+			"requirements": []
+		},
+		"MATE85": {
+			"name":"TÓPICOS EM SISTEMAS DE INFORMAÇÃO E WEB I",
+			"requirements": []
+		},
+		"MATE86": {
+			"name":"TÓPICOS EM SISTEMAS DE INFORMAÇÃO E WEB II",
+			"requirements": []
+		},
+		"MATE87": {
+			"name":"TÓPICOS EM SISTEMAS DE INFORMAÇÃO E WEB III",
+			"requirements": []
+		},
+		"MATE88": {
+			"name":"TÓPICOS EM SISTEMAS DE INFORMAÇÃO E WEB IV",
+			"requirements": []
+		},
+		"MATE89": {
+			"name":"TÓPICOS EM SISTEMAS DE TEMPO REAL I",
+			"requirements": []
+		},
+		"MATE90": {
+			"name":"TÓPICOS EM SISTEMAS DE TEMPO REAL II",
+			"requirements": []
+		},
+		"MATE91": {
+			"name":"TÓPICOS EM SISTEMAS DE TEMPO REAL III",
+			"requirements": []
+		},
+		"MATE92": {
+			"name":"TÓPICOS EM SISTEMAS DE TEMPO REAL IV",
+			"requirements": []
+		}
+	}
+}
