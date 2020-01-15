@@ -520,7 +520,7 @@
 		},
 		"MATB13": {
 			"name":"MÉTODOS FORMAIS",
-			"requirements": ["MATA47,MATA62"]
+			"requirements": ["MATA47","MATA62"]
 		},
 		"MATB14": {
 			"name":"LABORATÓRIO DE ENGENHARIA DE SOFTWARE",
