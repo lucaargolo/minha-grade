@@ -36,7 +36,7 @@ fetch("./components.json")
         //Saves the json in a cached variable so we dont need to fetch it every update
         cachedJson = json
         let savedApp = localStorage.getItem("app")
-        if(savedApp.length > 0) {
+        if(savedApp !== null && savedApp.length > 0) {
             app = JSON.parse(savedApp)
         }
         updateElements()

@@ -23,7 +23,7 @@ fetch("./components.json")
             let version = localStorage.getItem("version")
             let savedSimpleSelec = localStorage.getItem("simple_selec")
             let savedSelec = localStorage.getItem("selec")
-            if(version === document.getElementById("guide").innerText && savedSimpleSelec.length > 0 && savedSelec.length > 0) {
+            if(version === document.getElementById("guide").innerText && savedSimpleSelec !== null && savedSimpleSelec.length > 0 && savedSelec !== null && savedSelec.length > 0) {
                 simple_selec = JSON.parse(savedSimpleSelec)
                 selec = JSON.parse(savedSelec)
             }
