@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+h3 {
+    margin-bottom: 0px;
+}
+h5 {
+    margin-top: 0px;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -22,11 +28,16 @@ body {
     width: auto;
     height: auto;
     margin: 10px;
+    color: white;
+    text-decoration: none;
 }
 #topnav a:hover {
     cursor: pointer;
 }
 #screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -38,6 +49,11 @@ body {
     justify-content: center;
 }
 #optative {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#simulate {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -103,4 +119,112 @@ footer p {
 }
 .status .reprov {
     background-color: #cc4040;
+}
+.status .subst {
+    background-color: #aa9a40;
+}
+
+.classes {
+    background-color: gray;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.search {
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #444444;
+    width: 300px;
+}
+
+.search input {
+    color: #FFFFFF;
+    padding: 0px 10px 0px 10px;
+    font-size: medium;
+    width: 100%;
+    background-color: #444444;
+    border-radius: 5px;
+    border:0;
+    outline:0;
+}
+
+.search svg {
+    transform: scale(0.5);
+}
+
+.classes input:focus {
+    outline: none!important;
+}
+
+#classes::-webkit-scrollbar {
+    display: none;
+}
+#classes {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    height: 600px;
+    max-height: 600px;
+}
+#classes .component {
+    min-height: 110px;
+    height: fit-content;
+    background-color: #121212;
+}
+#classes .component a {
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: visible;
+}
+.hour {
+    width: 100px;
+}
+.component .obrig {
+    background-color: rgb(114, 0, 0);
+}
+.component .optat {
+    background-color: rgb(158, 103, 0);
+}
+.large {
+    width: 300px;
+}
+.table {
+    background-color: gray;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.mirror {
+    display: flex;
+    flex-direction: row;
+}
+.mirror .list {
+    display: flex;
+    flex-direction: column;
+}
+td, th {
+    width: 100px;
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: #444444;
+}
+  
+tr:nth-child(even){
+    background-color: #353535;
+}
+
+th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+    background-color: #121212;
+    border-radius: 5px;
+    color: white;
 }

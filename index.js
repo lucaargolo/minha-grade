@@ -2,7 +2,7 @@ let cachedJson
 let app = {}
 
 //Loads the components.json file
-fetch("components.json")
+fetch("./components.json")
     .then(response => response.json())
     .then(json => {
         let obligatory = {}
@@ -35,6 +35,10 @@ fetch("components.json")
         }
         //Saves the json in a cached variable so we dont need to fetch it every update
         cachedJson = json
+        let savedApp = localStorage.getItem("app")
+        if(savedApp.length > 0) {
+            app = JSON.parse(savedApp)
+        }
         updateElements()
     });
 
@@ -86,7 +90,7 @@ function updateElements() {
             aprovBtn.onclick = function() {
                 //If the user clicks in the "Im approved" button, marks the component as a true in the app var and update the elements
                 app[div.id] = true
-                updateElements()
+                updateElements(true)
             }
             let reprovBtn = document.createElement("p")
             reprovBtn.innerText = "PERDI"
@@ -94,7 +98,7 @@ function updateElements() {
             reprovBtn.onclick = function() {
                 //If the user clicks in the "Im repproved" button, marks the component as a false in the app var and update the elements
                 app[div.id] = false
-                updateElements()
+                updateElements(true)
             }
             div.getElementsByClassName("status")[0].appendChild(aprovBtn)
             div.getElementsByClassName("status")[0].appendChild(reprovBtn)
@@ -111,7 +115,7 @@ function updateElements() {
                         e.scrollIntoView({block: "center"})
                         e.style = "background-color: #FFFFFF; color: black"
                         await sleep(500)
-                        updateElements()
+                        updateElements(true)
                     }
                     div.getElementsByClassName("status")[0].appendChild(p)
                 }
@@ -119,5 +123,9 @@ function updateElements() {
         }
         if(app[div.id]) div.style = "background-color: #256025"
 
+
+        
+
     })
+    localStorage.setItem("app", JSON.stringify(app))
 }
